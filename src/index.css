@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.centered-container {
+  @apply mx-auto px-2 md:px-6 max-w-screen-xl;
+}
+
+.section {
+  @apply mt-8 mb-16;
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+}
+
+.circle {
+  @apply mx-1 h-3 w-3 rounded-full bg-gray-500;
+}
+
+.yext-chat-feedback-buttons__thumbs-up-button,
+.yext-chat-feedback-buttons__thumbs-down-button {
+  @apply bg-gray-700;
+  &:hover {
+    @apply bg-white border !border-gray-700;
+    .yext-chat-feedback-buttons__thumbs-up-icon,
+    .yext-chat-feedback-buttons__thumbs-down-icon {
+      @apply text-gray-900;
+    }
+  }
+}
+
+.yext-chat-feedback-buttons__container {
+  @apply right-0 -top-2 gap-1;
+}
